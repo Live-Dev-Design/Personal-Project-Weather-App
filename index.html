@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico">
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <body>
+        <nav class="navbar navbar-dark bg-primary mb-3">
+            <div class="container">
+                <a href="#" class="navbar-brand" style="font-size:2.4rem"><img src="img/logo.png" width="12%" style="margin-bottom: 1em;" alt="sun Logo"> WeatherApp</a>
+            </div>
+        </nav>
+        <div class="container searchContainer">
+            <div class="search card card-body">
+                <h1>Let's check out the weather in...</h1>
+                <p class="lead">Enter a Valid Location Below:</p>
+                <input type="text" id="searchUser" class="form-control" placeholder="Location">
+            </div>
+            <br>
+            <div id="profile"></div>
+        </div>
+        <div class="container text-center mt-2">
+            <button class="btn btn-primary" id="submit">Submit</button>
+            <button class="btn btn-primary" id="clear">Clear</button>
+        </div>
+        
+        <div id="content">
+
+        </div>
+        <footer class="mt-5 p-3 text-center bg-light">
+             WeatherApp &copy;
+        </footer>
+  </body>
+  <script src="fetch.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</html>
